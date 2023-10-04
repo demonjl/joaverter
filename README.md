@@ -1,6 +1,6 @@
 # Joaverter - Tu Herramienta de Conversión Multimedia
 
-![Joaverter Logo](joaverter.png)
+![Joaverter Logo](/public/images/joaverter.png)
 
 ## Descripción
 
@@ -16,7 +16,7 @@ Joaverter es una herramienta en línea que te permite convertir archivos multime
 
 ## Cómo Usar Joaverter
 
-1. Accede a [Joaverter](https://www.joaverter.com) desde tu navegador.
+1. Accede a [Joaverter](https://joaverter.vercel.app) desde tu navegador.
 2. Selecciona el tipo de archivo multimedia que deseas convertir (imagen, audio o video).
 3. Carga tu archivo.
 4. Elige el formato de salida deseado.
