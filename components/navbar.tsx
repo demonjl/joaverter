@@ -41,7 +41,7 @@ export default function Navbar({}): any {
           </Button>
         </Link>
       </div>
-      <Link href="https://github.com/demonjl">
+      <Link href="https://github.com/demonjl/joaverter" target='_blank' rel="noopener noreferrer">
         <Button
           variant="default"
           className="rounded-full w-fit bg-otroColor4 gap-2 items-center hidden md:flex"
@@ -56,7 +56,7 @@ export default function Navbar({}): any {
 
       {/* MOBILE NAV */}
       <Sheet>
-        <SheetTrigger className="block md:hidden p-3">
+        <SheetTrigger className="block md:hidden p-2 bg-[#ff70ac]">
           <span className="text-2xl">
             <GrMenu />
           </span>
