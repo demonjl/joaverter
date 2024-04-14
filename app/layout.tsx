@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar';
 import { Toaster } from '@/components/ui/toaster';
 // import GA from '@/components/GA';
 import Script from 'next/script'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,18 +22,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log(process.env.GA_MEASUREMENT_ID);
   return (
     <html lang="en">
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`} />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', '${process.env.GA_MEASUREMENT_ID}');
-        `}
-      </Script>
+      <GoogleTagManager gtmId={process.env.GA_MEASUREMENT_ID as string} />
       <body className={inter.className}>
         <Navbar />
         <Toaster />
